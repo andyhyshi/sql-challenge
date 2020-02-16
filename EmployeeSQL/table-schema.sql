@@ -1,3 +1,13 @@
+
+
+CREATE TABLE "departments" (
+    "dept_no" varchar   NOT NULL,
+    "dept_name" varchar   NOT NULL,
+    CONSTRAINT "pk_departments" PRIMARY KEY (
+        "dept_no"
+     )
+);
+
 CREATE TABLE "employees" (
     "emp_no" int   NOT NULL,
     "birth_date" date   NOT NULL,
@@ -7,14 +17,6 @@ CREATE TABLE "employees" (
     "hire_date" date   NOT NULL,
     CONSTRAINT "pk_employees" PRIMARY KEY (
         "emp_no"
-     )
-);
-
-CREATE TABLE "departments" (
-    "dept_no" varchar   NOT NULL,
-    "dept_name" varchar   NOT NULL,
-    CONSTRAINT "pk_departments" PRIMARY KEY (
-        "dept_no"
      )
 );
 
